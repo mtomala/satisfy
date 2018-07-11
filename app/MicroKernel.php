@@ -76,6 +76,10 @@ class MicroKernel extends Kernel
         $routes
             ->add('/admin/satis/buildRun', $controllerBase . 'SatisController::buildRunAction', 'satis_build_run')
             ->setMethods(['GET']);
+        // bitbucket integration
+        $routes
+            ->add('/bitbucket/webhook', $controllerBase . 'BitbucketController::webhookAction', 'bitbucket_webhook')
+            ->setMethods(['POST']);
     }
 
     // optional, to use the standard Symfony cache directory
