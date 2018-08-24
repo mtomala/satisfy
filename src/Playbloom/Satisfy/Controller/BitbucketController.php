@@ -74,7 +74,10 @@ class BitbucketController extends Controller
             '131.103.20.160/27',
             '165.254.145.0/26',
             '104.192.143.0/21',
-            '127.0.0.1/32'
+            '127.0.0.1/32',
+            '18.205.93.0/25',
+            '18.234.32.128/25',
+            '13.52.5.0/25',
         );
 
         // Extract Bitbucket headers from request.
